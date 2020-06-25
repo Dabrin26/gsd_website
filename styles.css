@@ -173,7 +173,7 @@ a:hover:after {
   /* Rectangle 143 */
   content: "";
   position: fixed;
-  width: 50px;
+  width: 80px;
   height: 100vh;
   left: 0px;
 
@@ -189,7 +189,7 @@ a:hover:after {
 
 #menu-overlay.active {
   display: flex;
-  top: 100vh;
+  height: 100vh;
 }
 
 #menu-overlay ul {
