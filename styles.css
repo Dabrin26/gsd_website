@@ -1,6 +1,5 @@
 .G_S_D {
   position: absolute;
-  width: 6352px;
 }
 
 .spacer {
@@ -9,13 +8,13 @@
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .space {
   height: 100vh;
   background-image: url(Universe.svg);
   opacity: 0.1;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .dot {
   border-radius: 50%;
@@ -63,6 +62,10 @@ h1 {
   bottom: 5vh;
 }
 .rel {
+  position: relative;
+  background-color: #ffffff;
+}
+.rel1 {
   position: relative;
 }
 .bg1 {
@@ -113,7 +116,7 @@ a:hover:after {
 
 .menu-btn {
   top: 45vh;
-  position: relative;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,7 +172,7 @@ a:hover:after {
 .rec::before {
   /* Rectangle 143 */
   content: "";
-  position: absolute;
+  position: fixed;
   width: 50px;
   height: 100vh;
   left: 0px;
@@ -177,12 +180,16 @@ a:hover:after {
   background: #ffffff;
   box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.12);
 }
+.rec {
+  background-color: #ffffff;
+}
 #menu-overlay {
   display: none;
 }
 
 #menu-overlay.active {
   display: flex;
+  top: 100vh;
 }
 
 #menu-overlay ul {
