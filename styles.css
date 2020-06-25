@@ -1,0 +1,1522 @@
+.G_S_D {
+  position: absolute;
+  width: 6352px;
+}
+
+.spacer {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: hidden;
+}
+.space {
+  height: 100vh;
+  background-image: url(Universe.svg);
+  opacity: 0.1;
+  overflow-y: hidden;
+}
+.dot {
+  border-radius: 50%;
+}
+.scrdown {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bg {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow-y: hidden;
+}
+.whtxt {
+  color: #fff3f3;
+  font-family: "Open Sans", sans-serif;
+}
+p {
+  font-weight: 300;
+}
+h1 {
+  font-family: "Open Sans", sans-serif;
+}
+.astro {
+  width: 60vw;
+  display: flex;
+  align-self: flex-end;
+}
+
+.space1 {
+  height: 100vh;
+  opacity: 0.1;
+}
+.top {
+  position: absolute;
+  top: 10vh;
+}
+.bot {
+  position: absolute;
+  bottom: 5vh;
+}
+.rel {
+  position: relative;
+}
+.bg1 {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  transition: width 0.5s ease 0s, left 0s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+@media screen and (max-height: 300px) {
+  ul {
+    margin-top: 40px;
+  }
+}
+
+/*  N A V B A R */
+
+.menu-btn {
+  top: 45vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80px;
+  height: 82px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  /*border:3px solid #ff0000 ; */
+}
+
+.menu-btn_burger {
+  width: 30px;
+  height: 4px;
+  background: #000000;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(56, 158, 241, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: #000000;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(56, 156, 241, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_burger::before {
+  transform: translateY(-16px);
+}
+
+.menu-btn_burger::after {
+  transform: translateY(16px);
+}
+.menu-btn.open .menu-btn_burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn_burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn_burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+.rec::before {
+  /* Rectangle 143 */
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 100vh;
+  left: 0px;
+
+  background: #ffffff;
+  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.12);
+}
+#menu-overlay {
+  display: none;
+}
+
+#menu-overlay.active {
+  display: flex;
+}
+
+#menu-overlay ul {
+  position: relative;
+}
+#menu-overlay ul li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  display: block;
+}
+#menu-overlay ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 3.5em;
+  padding: 0 10px;
+  color: black;
+}
+
+#menu-overlay ul li a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: #ffffff;
+  transform: translateY(-50%) scale(0);
+  transform-origin: right;
+  transition: 0.5s transform;
+}
+
+#menu-overlay ul li a:hover:before {
+  transform: translateY(-50%) scale(0);
+  transform-origin: right;
+  transition: 0.5s transform;
+}
+.nav {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-left: 5vw;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+.nav1 {
+  display: flex;
+  justify-content: space-around;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-right: 5vw;
+}
+#uni {
+  overflow-y: hidden;
+}
+
+.start_gsd {
+  width: 100vh;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vh;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+#text001 {
+  /* But what is your passion? */
+
+  position: absolute;
+  width: 279px;
+  height: 62px;
+  left: 220px;
+  top: 276px;
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 120.5%;
+  /* or 31px */
+
+  color: #171723;
+}
+
+#text002 {
+  /* Anything that gives you butterflies counts */
+
+  position: absolute;
+  width: 338px;
+  height: 15px;
+  left: 220px;
+  top: 359px;
+
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120.5%;
+  /* or 19px */
+
+  color: #292727;
+
+  opacity: 0.6;
+}
+
+#text003 {
+  /* Although these four answers may vary, they originate from the same singularity */
+
+  position: absolute;
+  width: 364px;
+  height: 71px;
+  left: 1626px;
+  top: 312px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 148.18%;
+  /* or 36px */
+  text-align: center;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#text004 {
+  /* You. */
+
+  position: absolute;
+  width: 53px;
+  height: 30px;
+  left: 3020px;
+  top: 345px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 115.68%;
+  /* or 28px */
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#text005 {
+  /* At GSD, we empower the people of today with the needs of tomorrow, through creativity and innovation. */
+
+  position: absolute;
+  width: 432.32px;
+  height: 97.32px;
+  left: 3816px;
+  top: 223.48px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#text006 {
+  /* Transforming Potential to Possibility through Prototyping */
+
+  position: absolute;
+  width: 362.22px;
+  height: 55.5px;
+  left: 3817px;
+  top: 425.74px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#text007 {
+  /* Businesses we work with, helping them get shit done. */
+
+  position: absolute;
+  width: 242px;
+  height: 108px;
+  left: 5111px;
+  top: 312px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#text008 {
+  /* Do you want to unlock your true potential? */
+
+  position: absolute;
+  width: 329px;
+  height: 70px;
+  left: 6501px;
+  top: 182px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#text009 {
+  position: absolute;
+  width: 277px;
+  height: 21px;
+  left: 6501px;
+  top: 264px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration-line: underline;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#text010 {
+  /* Do you have work you need help with? */
+
+  position: absolute;
+  width: 289px;
+  height: 70px;
+  left: 7152px;
+  top: 395px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#text011 {
+  /* Partner with us! Find out why. */
+
+  position: absolute;
+  width: 226px;
+  height: 21px;
+  left: 7154px;
+  top: 479px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration-line: underline;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#vhuman {
+  position: absolute;
+  left: 597px;
+  right: 87.17%;
+  top: 355.13px;
+  bottom: 118.72px;
+  width: 382.53px;
+}
+
+#vheart {
+  position: absolute;
+  width: 102.54px;
+  height: 235.65px;
+  left: 764px;
+  top: 220px;
+}
+
+#gsd-logo-1 {
+  /* Logo_Horizontal@3x */
+
+  position: absolute;
+  width: 258.36px;
+  height: 25.8px;
+  top: 373.82px;
+  left: 3818.02px;
+}
+
+#gsd-gp1 {
+  /* Images/GSD */
+
+  position: absolute;
+  width: 340.08px;
+  height: 340.08px;
+  left: 4324px;
+  top: 190px;
+}
+
+#partner-logo {
+  position: absolute;
+  width: 747px;
+  height: 411px;
+  left: 5445px;
+  top: 128px;
+}
+
+#nextG {
+  /* Icons/Next */
+
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 6794px;
+  top: 260px;
+}
+
+#nextG1 {
+  /* Icons/Next */
+
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 7387px;
+  top: 475px;
+}
+
+#dottedG1 {
+  /* DottedLine_GSD_1 */
+
+  position: absolute;
+  width: 520px;
+  height: 152px;
+  left: 943.93px;
+  top: 273px;
+
+  /* BLACK */
+
+  transform: rotate(7.15deg);
+}
+
+#dottedG2 {
+  /* DottedLine_GSD_2 */
+
+  position: absolute;
+  width: 696px;
+  height: 83.24px;
+  left: 2157px;
+  top: 341.76px;
+}
+
+#dottedG3 {
+  /* DottedLine_GSD_3 */
+
+  position: absolute;
+  width: 523px;
+  height: 103.13px;
+  left: 3242px;
+  top: 230.24px;
+}
+
+#dottedG4 {
+  /* DottedLine_GSD_4 */
+
+  position: absolute;
+  width: 385px;
+  height: 0px;
+  left: 4683px;
+  top: 366px;
+
+  border: 0.5px dashed #606060;
+}
+
+#dottedG5 {
+  /* DottedLine_GSD_5 */
+
+  position: absolute;
+  width: 1280px;
+  height: 0px;
+  left: 6219px;
+  top: 349px;
+
+  border: 1px dashed #000000;
+}
+
+#gsd-in {
+  /* Hcfwew744z4 */
+
+  position: absolute;
+  width: 378px;
+  height: 252.3px;
+  left: 6899px;
+  top: 79.03px;
+}
+
+#gsd-pt {
+  /* Rectangle 165 */
+
+  position: absolute;
+  width: 372px;
+  height: 128px;
+  left: 6711px;
+  top: 402px;
+
+  border-radius: 40px 0px;
+}
+
+#bts0 {
+  /* Back to start */
+
+  position: absolute;
+  width: 73px;
+  height: 16px;
+  left: 7487px;
+  top: 650px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #000000;
+}
+
+#btsB {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  left: 7441px;
+  top: 643px;
+}
+
+/* P A R T N E R  S I D E */
+
+#partner_img0 {
+  /* Ellipse 15 */
+
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  left: 386px;
+  top: 263px;
+}
+
+#partner_img1 {
+  /* Ellipse 14 */
+
+  position: absolute;
+  width: 163px;
+  height: 162px;
+  left: 466px;
+  top: 128px;
+}
+
+#partner_img2 {
+  /* Rectangle 159 */
+
+  position: absolute;
+  width: 322px;
+  height: 442px;
+  left: 1804px;
+  top: 0px;
+  border-radius: 0px 0px 11px 11px;
+}
+
+#partner_img3 {
+  position: absolute;
+  width: 322px;
+  height: 442px;
+  left: 2194px;
+  top: 0px;
+  border-radius: 0px 0px 11px 11px;
+}
+
+#partner_img4 {
+  /* Rectangle 160 */
+
+  position: absolute;
+  width: 322px;
+  height: 442px;
+  left: 2590px;
+  top: 0px;
+  border-radius: 0px 0px 11px 11px;
+}
+
+#partner_dot0 {
+  /* Vectors/DottedLine_Business_1 */
+
+  position: absolute;
+  width: 447.32px;
+  height: 111.58px;
+  left: 896px;
+  top: 287.51px;
+  transform: rotate(-4.17deg);
+}
+
+#partner_dot1 {
+  /* Vectors/DottedLine_Business_2 */
+
+  position: absolute;
+  width: 350px;
+  height: 106px;
+  left: 3006px;
+  top: 257px;
+}
+
+#partner_dot2 {
+  /* Vectors/DottedLine_Business_3 */
+
+  position: absolute;
+  width: 581px;
+  height: 127px;
+  left: 4279px;
+  top: 376px;
+}
+
+#partner_dot3 {
+  /* Vectors/DottedLine_Business_4 */
+
+  position: absolute;
+  width: 108.3px;
+  height: 39.61px;
+  left: 5254.63px;
+  top: 374.28px;
+}
+
+#partner_dot4 {
+  /* Vectors/DottedLine_Business_5 */
+
+  position: absolute;
+  width: 121.37px;
+  height: 49.53px;
+  left: 5689.78px;
+  top: 358.13px;
+}
+
+#partner_dot5 {
+  /* Vectors/DottedLine_Business_6 */
+
+  position: absolute;
+  width: 143.24px;
+  height: 34.67px;
+  left: 6136.58px;
+  top: 381.14px;
+}
+
+#partner_text000 {
+  /* At GSD, we fondly refer to all the projects as the “shit”. We work with businesses and help them with their shit by mapping eager interns onto projects. */
+
+  position: absolute;
+  width: 433.51px;
+  height: 206px;
+  left: 312px;
+  top: 408px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#partner_text001 {
+  /* Shit we can help you with */
+
+  position: absolute;
+  width: 248px;
+  height: 85px;
+  left: 1445.95px;
+  top: 210px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#partner_text002 {
+  /* Businesses we’ve worked with */
+
+  position: absolute;
+  width: 275px;
+  height: 89px;
+  left: 3436px;
+  top: 304.13px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#partner_text003 {
+  /* Think we can get shit done for you? */
+
+  position: absolute;
+  width: 476px;
+  height: 37px;
+  left: 4932px;
+  top: 193.71px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#partner_text004 {
+  /* Get in Touch with us! */
+
+  position: absolute;
+  width: 288px;
+  height: 106px;
+  left: 6485px;
+  top: 207px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+
+  /* BLACK */
+  color: #241f20;
+}
+
+#partner_text005 {
+  /* Have unanswered questions? We’d be delighted to help you find the answer. */
+
+  position: absolute;
+  left: 6486px;
+  top: 362px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 29px;
+
+  /* BLACK */
+  color: #241f20;
+}
+#fs {
+  left: 1916.95px;
+  top: 474px;
+
+  position: absolute;
+  width: 97px;
+  height: 30px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#is {
+  /* Innovative Shit */
+
+  position: absolute;
+  width: 167.05px;
+  height: 30px;
+  left: 2272.95px;
+  top: 472px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: right;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#rs {
+  /* Group 340 */
+
+  position: absolute;
+  width: 133px;
+  height: 30px;
+  left: 2683px;
+  top: 469px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: right;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#bus0 {
+  /* Business_Testimonial_1 */
+
+  position: absolute;
+  width: 323px;
+  height: 419.07px;
+  left: 3878.61px;
+  top: 175.07px;
+}
+
+#faa {
+  position: absolute;
+  width: 301px;
+  height: 183px;
+  top: 293px;
+  left: 4932.13px;
+}
+
+#ltb {
+  position: absolute;
+  width: 301px;
+  height: 183px;
+  top: 293px;
+  left: 5377.13px;
+}
+
+#lgs {
+  position: absolute;
+  width: 301px;
+  height: 183px;
+  top: 293px;
+  left: 5822.13px;
+}
+
+/* I N T E R N  S I D E */
+
+#intern_img0 {
+  position: absolute;
+  width: 216.8px;
+  height: 186px;
+  left: 474.95px;
+  top: 122px;
+}
+
+#intern_img1 {
+  /* Cards/Design_Normal */
+
+  position: absolute;
+  width: 250px;
+  height: 320.99px;
+  left: 1531px;
+  top: -1px;
+
+  background: linear-gradient(
+      0deg,
+      rgba(38, 36, 36, 0.32),
+      rgba(38, 36, 36, 0.32)
+    ),
+    url(.jpg);
+  background-blend-mode: multiply, normal;
+  border-radius: 0px 0px 11px 11px;
+}
+
+#intern_img2 {
+  /* Cards/Curation_Normal */
+
+  position: absolute;
+  width: 250px;
+  height: 320.99px;
+  left: 1819px;
+  top: -1px;
+
+  background: linear-gradient(
+      0deg,
+      rgba(38, 36, 36, 0.32),
+      rgba(38, 36, 36, 0.32)
+    ),
+    url(.jpg);
+  background-blend-mode: multiply, normal;
+  border-radius: 0px 0px 11px 11px;
+}
+
+#intern_img3 {
+  /* Cards/BusinessM_Normal */
+
+  position: absolute;
+  width: 250px;
+  height: 320.99px;
+  left: 2107px;
+  top: -1px;
+
+  background: linear-gradient(
+      0deg,
+      rgba(38, 36, 36, 0.32),
+      rgba(38, 36, 36, 0.32)
+    ),
+    url(scott-graham-5fNmWej4tAA-unsplash.jpg);
+  background-blend-mode: multiply, normal;
+  border-radius: 0px 0px 11px 11px;
+}
+
+#intern_img4 {
+  /* Cards/ProjectM_Normal */
+
+  position: absolute;
+  width: 250px;
+  height: 320.99px;
+  left: 2395px;
+  top: -1px;
+
+  background: linear-gradient(
+      0deg,
+      rgba(38, 36, 36, 0.32),
+      rgba(38, 36, 36, 0.32)
+    ),
+    url(.jpg);
+  background-blend-mode: multiply, normal;
+  border-radius: 0px 0px 11px 11px;
+}
+
+#intern_img5 {
+  position: absolute;
+  width: 162px;
+  height: 217px;
+  left: 3085px;
+  top: 213px;
+}
+
+#intern_img6 {
+  position: absolute;
+  width: 229px;
+  height: 286px;
+  left: 3533px;
+  top: 156px;
+}
+
+#intern_img7 {
+  position: absolute;
+  width: 207px;
+  height: 269px;
+  left: 4005px;
+  top: 243px;
+}
+
+#intern_img8 {
+  /* Image/Interns_2 */
+
+  position: absolute;
+  width: 1202px;
+  height: 416px;
+  left: 4916px;
+  top: -162px;
+
+  border-radius: 20px;
+}
+
+#intern_card0 {
+  position: absolute;
+  top: 384px;
+  left: 4927px;
+}
+
+#intern_card1 {
+  position: absolute;
+  top: 384px;
+  left: 5372px;
+}
+
+#intern_card2 {
+  position: absolute;
+  top: 384px;
+  left: 5817px;
+}
+
+#intern_text00 {
+  /* Here at GSD we help unlock your true potential. We do that by helping you achieve your passion in life through kickass internships. */
+
+  position: absolute;
+  width: 550px;
+  height: 140px;
+  left: 303px;
+  top: 364px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#intern_text01 {
+  /* To help you find your passion, we’ve broadly classified it into four domains */
+
+  position: absolute;
+  width: 490px;
+  height: 66px;
+  left: 1367px;
+  top: 434px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: #000000;
+}
+
+#intern_text02 {
+  /* Design */
+
+  position: absolute;
+  width: 77px;
+  height: 63.81px;
+  left: 1559px;
+  top: 233.94px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: #ffffff;
+}
+
+#intern_text03 {
+  /* Curation */
+
+  position: absolute;
+  width: 97px;
+  height: 63.81px;
+  left: 1847px;
+  top: 233.94px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: #ffffff;
+}
+
+#intern_text04 {
+  /* Business Management */
+
+  position: absolute;
+  width: 149px;
+  height: 63.81px;
+  left: 2135px;
+  top: 213.94px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: #ffffff;
+}
+
+#intern_text05 {
+  /* Project Management */
+
+  position: absolute;
+  width: 149px;
+  height: 63.81px;
+  left: 2423px;
+  top: 213.94px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: #ffffff;
+}
+
+#intern_text06 {
+  /* Interns who’ve worked with us */
+
+  position: absolute;
+  width: 258.86px;
+  height: 91px;
+  left: 3505.07px;
+  top: 543px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#intern_text07 {
+  /* So, do you want to find out how we do it? */
+
+  position: absolute;
+  width: 251px;
+  height: 66px;
+  left: 4544px;
+  top: 446px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+.cards {
+  position: absolute;
+  width: 301px;
+  height: 183px;
+}
+
+#intern_dot0 {
+  /* Vectors/DottedLine_Intern_1 */
+
+  position: absolute;
+  width: 304px;
+  height: 172px;
+  left: 962px;
+  top: 324px;
+  transform: matrix(-0.98, 0.2, 0.2, 0.98, 0, 0);
+}
+
+#intern_dot1 {
+  /* Vectors/DottedLine_Intern_2 */
+
+  position: absolute;
+  width: 453px;
+  height: 257px;
+  left: 2627px;
+  top: 151px;
+  transform: rotate(17.2deg);
+}
+
+#intern_dot2 {
+  /* Vectors/DottedLine_Intern_3 */
+
+  position: absolute;
+  width: 296px;
+  height: 248px;
+  left: 3246px;
+  top: 182px;
+  transform: rotate(0deg);
+}
+
+#intern_dot3 {
+  /* Vectors/DottedLine_Intern_4 */
+
+  position: absolute;
+  width: 223.5px;
+  height: 197.5px;
+  left: 3781.28px;
+  top: 173.55px;
+  transform: rotate(-0.31deg);
+}
+
+#intern_dot4 {
+  /* Vectors/DottedLine_Intern_5 */
+
+  position: absolute;
+  width: 242.71px;
+  height: 60.13px;
+  left: 4251.05px;
+  top: 420.04px;
+  transform: rotate(13.84deg);
+}
+
+#intern_dot5 {
+  /* Vectors/DottedLine_Intern_6 */
+
+  position: absolute;
+  width: 108.04px;
+  height: 28.71px;
+  left: 5245.51px;
+  top: 461.81px;
+}
+
+#intern_dot6 {
+  /* Vectors/DottedLine_Intern_7 */
+
+  position: absolute;
+  width: 120.5px;
+  height: 46.71px;
+  left: 5681.08px;
+  top: 447.41px;
+}
+
+#intern_dot7 {
+  /* Vectors/DottedLine_Intern_8 */
+
+  position: absolute;
+  width: 216.44px;
+  height: 23.03px;
+  left: 6130.29px;
+  top: 450.53px;
+}
+
+#intern_f0 {
+  /* Get in Touch with us! */
+
+  position: absolute;
+  width: 288px;
+  height: 106px;
+  left: 186px;
+  top: 207px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+
+  /* BLACK */
+  color: #241f20;
+}
+
+#intern_f1 {
+  /* Vectors/Line */
+
+  position: absolute;
+  width: 105px;
+  height: 0px;
+  left: 196px;
+  top: 354px;
+
+  /* new */
+  border: 3px solid #ffc062;
+}
+
+#intern_f2 {
+  /* Have unanswered questions? We’d be delighted to help you find the answer. */
+
+  position: absolute;
+  top: 362px;
+  left: 186px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 29px;
+
+  /* new black 2 */
+  color: #263238;
+}
+
+#Intern_Fmail {
+  /* Group 335 */
+
+  position: absolute;
+  width: 260px;
+  height: 38px;
+  left: 781px;
+  top: 199px;
+
+  /* Rectangle 35 */
+
+  position: absolute;
+  width: 260px;
+  height: 38px;
+  left: 781px;
+  top: 199px;
+
+  background: #ffffff;
+  border-radius: 7px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+
+  /* GREY */
+  color: #aaaaaa;
+}
+
+#Intern_f3 {
+  /* Are you an */
+
+  position: absolute;
+  width: 82px;
+  height: 15px;
+  left: 781px;
+  top: 254px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+
+  /* GREY */
+  color: #aaaaaa;
+}
+
+#intern_dd {
+  position: absolute;
+  width: 260px;
+  height: 38px;
+  top: 291px;
+  left: 781px;
+}
+
+#Intern_Frev {
+  /* Group 334 */
+
+  position: absolute;
+  width: 260px;
+  height: 120px;
+  left: 781px;
+  top: 349px;
+
+  /* Rectangle 37 */
+
+  position: absolute;
+  width: 260px;
+  height: 120px;
+  left: 781px;
+  top: 349px;
+
+  background: #ffffff;
+  border-radius: 7px;
+
+  /* Drop a short message and tell us about yourself. */
+
+  position: absolute;
+  width: 260px;
+  height: 120px;
+  left: 781px;
+  top: 364px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+
+  /* GREY */
+  color: #aaaaaa;
+}
+
+#intern_fbtn {
+  position: absolute;
+  width: 255px;
+  height: 40px;
+  left: 786px;
+  top: 531px;
+}
+
+.sm {
+  /* Social Media */
+
+  position: absolute;
+  width: 145.21px;
+  height: 27.56px;
+  left: 190.03px;
+  top: 519px;
+}
+
+.form {
+  /* Rectangle 140 */
+
+  position: absolute;
+  width: 1333px;
+  height: 794px;
+  left: 6363px;
+  top: -4px;
+
+  /* dsd */
+  background: #f2f2f2;
+}

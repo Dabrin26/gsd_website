@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>zoom</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"></script>
+ 
+    <div id="trigger1" class="trigger1">
+      <div class="animate1 spacer" id="animate1">
+        <img src="universe.svg" class="dot" id="dot"/>
+      </div>
+    </div>
+    <div class="space" id="uni" >
+      <div class="bg">
+        <div>
+          <h1 class="whtxt">
+            What do you think the <br />universe wants from you?
+          </h1>
+          <p class="whtxt">
+            Definitely doesn’t need saving, others take care of that.
+          </p>
+        </div>
+        <img src="Astronaut.svg" />
+        <div class="scrdown whtxt">
+          <p>Scroll Down</p>
+          <img src="down.svg" />
+        </div>
+      </div>
+    </div>
+    <div class="space" id="plan">
+      <div class="bg">
+        <div>
+          <h1 class="whtxt">
+            What are you good at?
+            <pre></pre>
+          </h1>
+          <p class="whtxt">Making a killer cup of coffee counts too!</p>
+        </div>
+        <img src="Planets.svg" />
+      </div>
+      <div class="scrdown whtxt">
+        <p>Scroll Down</p>
+        <img src="down.svg" />
+      </div>
+    </div>
+    <div class="space1" id="city">
+      <div class="bg rel">
+        <img src="City.svg" />
+        <div class="top">
+          <h1>What can you get paid for?</h1>
+          <p>IT professionals don’t get as much as they used too</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="scrdown" bot>
+      <p>Scroll Down</p>
+      <img src="down1.svg" />
+    </div>
+    <div class="rel">
+      <div class="rec">
+      <span class="rect">
+      <div class="menu-btn" onclick="menuToggle()">
+          <div class="menu-btn_burger"></div>
+      </div>
+      <div id="menu-overlay" class="nav1">
+      <div class="nav" >
+      <div >
+          <ul class="list">
+              <li><a id="ng" href="#">Get Shit Done</a></li>
+              <li><a id="ni" href="#">Internship</a></li>
+              <li><a id="np" href="#">Partnership</a></li>
+          </ul>
+        </div>
+        <div>
+          <a href="#">Intern with us<br/> get in touch</a>
+          <a href="#">Partner with us <br/>get in touch</a>
+          </div>
+      </div>
+      <img src="menu.svg"/>
+      <div class="nav">
+        <img src="logo.svg"/>
+        <div>
+          <div class="nav1">
+            <img src="Instagram.svg"/>
+            <img src="Facebook.svg"/>
+            <img src="LinkedIn.svg"/>
+            <img src="Twitter.svg"/>
+            
+          </div>
+          <p>The Scene, Thinnai Office,<br/>
+             Guindy, Chennai</p>
+        </div></div>
+      </div>
+       </span>
+      </div>
+  </div>
+    </div>
+
+  </br></br>
+    <div class="G_S_D">
+      <div class="start_gsd">
+        <h1 id="text001">But what is your passion?</h1>
+        <p id="text002">Anything that gives you butterflies counts</p>
+        <img id="vhuman" src="assets/Vectors/Human.svg" alt="">
+        <img id="vheart" src="assets/Vectors/Heart.svg" alt="">
+        <img id="dottedG1" src="assets/DottedLine_GSD_1.svg" alt="">
+        <h3 id="text003">Although these four answers may vary, they originate from the same singularity</h3>
+        <img id="dottedG2" src="assets/DottedLine_GSD_2.png" alt="">
+        <h2 id="text004" >You.</h2>
+        <img id="dottedG3" src="assets/DottedLine_GSD_3.svg" alt="">
+        <img id="dottedG4" src="assets/DottedLine_GSD_4.svg" alt="">
+        <img id="dottedG5" src="assets/DottedLine_GSD_5.svg" alt="">
+        <p id="text005" >At GSD, we empower the people of today with the needs of tomorrow, through creativity and innovation.</p>
+        <p id="text006">Transforming Potential to Possibility through Prototyping</p>
+        <p id="text007" >Businesses we work with, helping them <br> <b>get shit done.</b></p>
+        <p id="text008"> Do you want to unlock your true Potential?</p>
+        <a id="text009" href="./intern.html">Intern with us! See what you can do.</a>
+        <p id="text010" >Do you have work you need help with?</p>
+        <a id="text011" href="./Partner.html">Partner with us! Find out why.</a>
+        <p id="bts0">Back to start</p>
+        <img id="nextG" src="assets/Icons/Next.svg" alt="" >
+        <img id="nextG1" src="assets/Icons/Next.svg" alt="" >
+        <img id="gsd-logo-1" src="assets/addons/Logo_Horizontal@3x.svg" alt="">
+        <img id="gsd-gp1" src="assets/Images/GSD.svg" alt="">
+        <img id="partner-logo" src="assets/Images/partner.png" alt="">
+        <img id="gsd-in" src="assets/Images/Intern_Facing.svg" alt="">
+        <img id="gsd-pt" src="assets/Images/Partner_Facing.svg" alt="">
+        <a href=""><img id="btsB" src="assets/Icons/Back.svg" alt=""> </a>
+    </div>
+    </div>
+    
+
+
+    <script src="app.js"></script>
+    <script src="ap.js"></script>
+  </body>
+</html>
