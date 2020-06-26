@@ -2,7 +2,7 @@ $(document).ready(function () {
   var controller = new ScrollMagic.Controller();
 
   var tween = TweenMax.to("#animate1", 1, {
-    scale: 150,
+    scale: 185,
     ease: Linear.easeNone,
   });
 
