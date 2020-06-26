@@ -2,7 +2,7 @@ $(document).ready(function () {
   var controller = new ScrollMagic.Controller();
 
   var tween = TweenMax.to("#animate1", 1, {
-    scale: 129,
+    scale: 150,
     ease: Linear.easeNone,
   });
 
@@ -25,7 +25,18 @@ $(document).ready(function () {
   })
     .setTween(tween2)
     .setPin("#uni")
-    .addIndicators()
+    .addTo(controller);
+
+  var tween3 = TweenMax.to("#uni", 1, {
+    opacity: 0,
+    scale: 15,
+  });
+  var scene3 = new ScrollMagic.Scene({
+    triggerElement: "#plan",
+    triggerHook: 1,
+    duration: "100%",
+  })
+    .setTween(tween3)
     .addTo(controller);
 
   var tween4 = TweenMax.to("#plan", 1, {
@@ -38,6 +49,18 @@ $(document).ready(function () {
   })
     .setTween(tween4)
     .setPin("#plan")
+    .addTo(controller);
+
+  var tween5 = TweenMax.to("#plan", 1, {
+    opacity: 0,
+    scale: 15,
+  });
+  var scene5 = new ScrollMagic.Scene({
+    triggerElement: "#city",
+    triggerHook: 1,
+    duration: "100%",
+  })
+    .setTween(tween5)
     .addTo(controller);
   var tween6 = TweenMax.to("#city", 1, {
     opacity: 1,
