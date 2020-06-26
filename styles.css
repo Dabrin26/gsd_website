@@ -11,10 +11,13 @@
   overflow: hidden;
 }
 .space {
-  height: 100vh;
+  height: 105vh;
   background-image: url(Universe.svg);
-  opacity: 0.1;
+  opacity: 0;
   overflow: hidden;
+}
+.city {
+  height: 100vh;
 }
 .dot {
   border-radius: 50%;
@@ -26,6 +29,15 @@
   align-items: center;
 }
 .bg {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.bg11 {
   height: 85vh;
   display: flex;
   flex-direction: column;
@@ -50,8 +62,7 @@ h1 {
 }
 
 .space1 {
-  height: 100vh;
-  opacity: 0.1;
+  opacity: 0;
 }
 .top {
   position: absolute;
@@ -173,7 +184,7 @@ a:hover:after {
   /* Rectangle 143 */
   content: "";
   position: fixed;
-  width: 50px;
+  width: 80px;
   height: 100vh;
   left: 0px;
 
@@ -189,7 +200,7 @@ a:hover:after {
 
 #menu-overlay.active {
   display: flex;
-  top: 100vh;
+  height: 100vh;
 }
 
 #menu-overlay ul {
